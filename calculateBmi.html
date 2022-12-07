@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+<meta charset="utf-8">
+    <title>Wellbeing</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="LogoImg/Wellbeing%20Logo.jpg" rel="icon">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
+    
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+            
+</head>
+
+<body>
+	        
+<header>
+
+	<div class="grid-header">
+		
+                <div id="account">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+        
+        </div>
+
+     </div>
+					
+	
+		
+      <div class="logo">
+          <a href="index.html"><img src="LogoImg/Wellbeing%20Logo.jpg" height="100" alt="Wellbeing Logo" title="Wellbeing Logo"></a>
+        </div>
+
+
+			<div class="grid-header2">
+		
+               <div class="search-box">
+              <input type="text" class="search-input" placeholder="Search">
+              <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+
+
+            </div>
+
+		
+					
+			<div class="topnav" id="myTopnav"> 
+                  <a href="index.html">Home</a>
+                  <a href="calculateBmi.html">Your BMI</a>
+                  <a href="fitness.html">Fitness</a>
+				  <a href="health.html">Health</a>
+                  <a href="contact.html">Contact Us</a>
+				  
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i></a>
+				  
+            </div>  
+
+    
+    
+    
+</header>   
+    
+     
+    
+    <div class="grid-container">   
+   	
+        <div class="card4">
+				<img src="Images/BMI%20Explanation.jpg" alt="BMI Index with weights">
+        </div>
+            
+          <div class="card5">
+           <div class="BMIcalc">
+			<h2>BMI Calculator</h2>
+			<p class="text1">Height</p>
+			<input type="text" id="h">
+			<p class="text1">Weight</p>
+			<input type="text" id="w">
+			<p id="result"></p>
+			<button id="btn" onClick="BMI()">Calculate</button>
+			<p id="info">Please enter height [cm] and weight [kg]. Check below for Converters</p>
+		   </div>
+				</div>
+        
+         <div class="card6">
+				
+                    <h1>Height Converter</h1>
+                    <p class="text1">Feet:</p>
+                    <input type="text" id="feet" /> <br />
+                    <p class="text1">Inches:</p>
+                    <input type="text" id="inches" /> <br />
+                    <input type="submit" id="submit1" value="Convert to cm" /> <br /><br />
+                    <div id="result1"></div>
+        </div>
+            
+          <div class="card7">
+                 
+                    <h1>Weight Converter</h1>
+                    <p class="text1">Weight in pounds(lbs):</p>
+                    <input type="text" id="pounds" /> <br />
+                    <input type="submit" id="submit2" value="Convert to Kg" /> <br /><br />
+                    <div id="result2"></div>
+				</div>
+				
+				</div>
+            
+		
+	
+            
+    
+    
+    <footer class="footer">
+
+       <p>Project created by K00261195. For More Information <a href="mailto:adammc3011@gmail.com">Email The Author</a></p>
+        <p>All Images used in this project are subject to copyright, this website will not be published.</p>
+        
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="calculateBmi.html">Your BMI</a>
+                </li>
+                <li>
+                    <a href="fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a href="health.html">Health</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        
+        <div class="time">
+        <span class="hms"></span>
+        <span class="ampm"></span>
+        <br>
+        <span class="date"></span>
+      </div>
+        
+  </footer>
+    
+    <script src="nav.js"></script>
+    <script src="dateTime.js"></script>
+    <script src="weightConv.js"></script>
+    <script src="heightConv.js"></script>
+    <script src="BMI.js"></script>
+</body>
+</html>    
